@@ -1,7 +1,13 @@
-const heading = React.createElement('h1', {id:"heading"}, "I'm a h1 tag");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement('div', {id: 'parent'}, [heading, React.createElement('h2', {id:"heading2"}, "I'm a h2 tag")])
+const heading = React.createElement("h1", { id: "heading" }, "I'm a h1 tag");
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const parent = React.createElement("div", { id: "parent" }, [
+  heading,
+  React.createElement("h2", { id: "heading2" }, "I'm a h2 tag"),
+]);
 
-root.render(parent)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
