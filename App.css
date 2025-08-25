@@ -1,7 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
 #header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border: 1px solid #eee;
 }
-.menus {
+.nav-logo {
+  max-width: 250px;
+  height: auto;
+}
+.menus ul {
   display: flex;
+  font-size: 18px;
+  padding-left: 0;
+  padding-right: 50px;
+  margin: 0;
+}
+.menus ul li {
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+}
+
+.menus ul li a {
+  display: inline-block;
+  padding: 10px;
+}
+#footer {
+  background: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.restaurant-cards-container {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.restaurant-card {
+  width: 21%;
+  margin: 10px;
+  border-radius: 12px;
+  border: 1px solid #555;
+  background: #eee;
+  overflow: hidden;
+}
+.restaurant-card:hover {
+  border-color: #0f0;
+}
+.res-img img {
+  max-height: 200px;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+.res-content {
+  padding: 15px;
 }
