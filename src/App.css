@@ -42,7 +42,6 @@ body {
 }
 
 .restaurant-cards-container {
-  padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -70,4 +69,17 @@ body {
 .btn {
   margin: 10px;
   cursor: pointer;
+}
+.shimmer-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-cards-container .restaurant-card {
+  width: 18%;
+  min-height: 350px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
